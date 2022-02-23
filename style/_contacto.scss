@@ -1,0 +1,32 @@
+.header-formulario {
+  color: white;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+
+  }
+}
+
+
+.section-formulario {
+
+
+  color: white;
+  border: 1px solid grey;  
+  width: 70%;
+  margin: 1em 0 1em 15em;
+
+  .mb-3 {
+    padding: 1em;
+  }
+
+
+
+}
+
+.btnEnviar{
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}

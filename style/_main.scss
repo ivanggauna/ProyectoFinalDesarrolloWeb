@@ -1,0 +1,134 @@
+main {
+    color: white;
+  
+}
+
+
+.secondary-header {
+    font-family: var(--fuente-primaria);    
+    display: flex;
+    
+    justify-content: center;
+    padding-top: 1em;
+    h2{
+        font-size: 3rem;
+    }
+}
+
+.guion {
+    display: flex;
+    justify-content: center;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+
+    div {
+        padding: 1em;
+
+        h3{
+            font-size: 3rem;
+
+        }
+        h4{
+            font-size: 2.5rem;
+        }
+
+        button{
+            font-size: 2rem;
+        }
+    }
+
+    .main-image {
+        padding: 2em;      
+        background-image: url('../imagenes/fondoImagenes.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .btn {
+        background-color: rgb(216, 52, 66);
+        color: white;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.third-header {
+    
+    font-family: var(--fuente-primaria);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+  
+    color: white;
+    
+
+    div {
+        background-image: url('../imagenes/backgroundTextos.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5px 5px 0 5px;
+        p{
+            font-size: 1.3rem;
+        }
+    }
+
+
+}
+
+.secondary-section {
+   
+    font-family: var(--fuente-primaria);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 1.7rem;
+    margin-top: 0.5em;
+    color: white;
+
+
+    ul {
+        background-image: url('../imagenes/backgroundTextos.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+
+
+
+
+        li {
+            font-family: var(--fuente-primaria);
+            font-size: 1.3rem;
+            list-style: none;
+            font-weight: 200;
+            letter-spacing: 1px;
+
+            img {
+                padding-bottom: 23px;
+
+
+            }
+
+
+            h3 {
+                font-size: 1.7rem;
+            }
+
+
+        }
+
+    }
+}

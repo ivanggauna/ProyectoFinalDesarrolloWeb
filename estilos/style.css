@@ -1,0 +1,932 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Teko:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+:root {
+  --fuente-primaria:  'Teko', sans-serif;
+  --fuente-secundaria:'lato', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-primaria);
+  font-size: 3rem;
+  background-color: #0e131f;
+}
+
+.primary-header {
+  background-color: #0e131f;
+  font-size: 1.3rem;
+}
+
+.primary-header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: var(--fuente-primaria);
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.primary-header nav img {
+  padding: 20px 0 0 20px;
+}
+
+.primary-header nav ul {
+  color: white;
+}
+
+.primary-header nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 4rem;
+}
+
+.primary-header nav ul li a {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: white;
+}
+
+.primary-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  color: white;
+}
+
+.secondary-header {
+  font-family: var(--fuente-primaria);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1em;
+}
+
+.secondary-header h2 {
+  font-size: 3rem;
+}
+
+.guion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1em;
+}
+
+.main-section div {
+  padding: 1em;
+}
+
+.main-section div h3 {
+  font-size: 3rem;
+}
+
+.main-section div h4 {
+  font-size: 2.5rem;
+}
+
+.main-section div button {
+  font-size: 2rem;
+}
+
+.main-section .main-image {
+  padding: 2em;
+  background-image: url("../imagenes/fondoImagenes.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-section .btn {
+  background-color: #d83442;
+  color: white;
+}
+
+.main-section .btn:hover {
+  color: black;
+}
+
+.third-header {
+  font-family: var(--fuente-primaria);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+  color: white;
+}
+
+.third-header div {
+  background-image: url("../imagenes/backgroundTextos.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px 5px 0 5px;
+}
+
+.third-header div p {
+  font-size: 1.3rem;
+}
+
+.secondary-section {
+  font-family: var(--fuente-primaria);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  font-size: 1.7rem;
+  margin-top: 0.5em;
+  color: white;
+}
+
+.secondary-section ul {
+  background-image: url("../imagenes/backgroundTextos.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.secondary-section ul li {
+  font-family: var(--fuente-primaria);
+  font-size: 1.3rem;
+  list-style: none;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.secondary-section ul li img {
+  padding-bottom: 23px;
+}
+
+.secondary-section ul li h3 {
+  font-size: 1.7rem;
+}
+
+.main-footer {
+  background-image: url("../imagenes/backgroundFooter.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+  color: whitesmoke;
+  padding: 1em 0 1em 2em;
+  font-family: 'Teko', sans-serif;
+  font-weight: 400;
+}
+
+.main-footer h2 {
+  font-size: 3rem;
+}
+
+.main-footer p {
+  font-size: 2rem;
+}
+
+.section-contact {
+  color: white;
+  font-size: 2rem;
+}
+
+.section-contact h3 {
+  padding: 10px 10px 10px;
+}
+
+.section-contact div {
+  padding: 10px 10px 10px;
+}
+
+/* barra de busqueda */
+.buscador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em 0em 1em 0;
+}
+
+.buscador .src {
+  font-size: 2rem;
+  width: 60%;
+}
+
+/* Titulo+texto sobre pintura */
+.vallejo-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.vallejo-title h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.vallejo-title p {
+  font-family: var(--fuente-secundaria);
+}
+
+/* Seccion de imagenes */
+.galeria {
+  width: 100%;
+  /* Precios */
+  /* Texto debajo de las imagenes */
+  /* Div de los botones para posicionarlos */
+}
+
+.galeria img {
+  width: 100%;
+}
+
+.galeria .precio {
+  font-family: var(--fuente-secundaria);
+  margin-top: -1em;
+}
+
+.galeria p {
+  font-family: var(--fuente-secundaria);
+  margin-left: 1.5em;
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+
+.galeria .btnDiv {
+  margin-top: -0.7em;
+  padding-bottom: 1em;
+}
+
+.galeria .btnDiv .btn {
+  min-height: 1em;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+hr {
+  width: 75%;
+}
+
+.mainBlog {
+  background-color: #0e131f;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'aside imagenes';
+  background-color: #0e131f;
+  margin: 1em;
+  /* Menu aside */
+  /* Imagenes */
+}
+
+.mainBlog .uno {
+  margin-left: 8em;
+  height: auto;
+  width: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: aside;
+}
+
+.mainBlog .uno .breadcrumb {
+  text-decoration: none;
+}
+
+.mainBlog .uno a {
+  color: white;
+}
+
+.mainBlog .uno a:hover {
+  text-decoration: underline;
+}
+
+.mainBlog .dos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: imagenes;
+}
+
+.mainBlog .dos .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.mainBlog .dos .imgContainer .imgCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.mainBlog .dos .imgContainer .imgCol div {
+  padding: 5px;
+}
+
+.mainBlog .dos .imgContainer .imgCol div img {
+  width: 80%;
+}
+
+.mainBlog .dos .imgContainer .imgCol2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainBlog .dos .imgContainer .imgCol2 div {
+  padding: 5px;
+}
+
+.mainBlog .dos .imgContainer .imgCol2 div img {
+  width: 80%;
+}
+
+.header-formulario {
+  color: white;
+}
+
+.header-formulario h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-formulario {
+  color: white;
+  border: 1px solid grey;
+  width: 70%;
+  margin: 1em 0 1em 15em;
+}
+
+.section-formulario .mb-3 {
+  padding: 1em;
+}
+
+.btnEnviar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em;
+}
+
+/* 
+
+.galeria-products {
+    color: whitesmoke;
+
+  
+.accordion-body{
+    color: black;
+    
+}
+    p {
+
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .btnDiv {
+        padding: 0.5em;
+        margin-left: 1em;
+        text-align: center;
+
+        .btn {
+            min-height: 4em;
+            
+        }
+
+    }
+} */
+.header-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: whitesmoke;
+  font-family: var(--fuente-primaria);
+}
+
+.header-products h2 {
+  font-size: 4rem;
+}
+
+.gProductos .accordion-header button {
+  font-size: 1.5rem;
+  text-indent: 3.5em;
+}
+
+.gProductos .accordion-body {
+  font-size: 1.5rem;
+  font-weight: 250;
+}
+
+.gProductos p {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.gProductos img {
+  padding: 1em;
+}
+
+.gProductos .btn-danger {
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 0.3px;
+  margin-left: 4.2em;
+}
+
+/* Query mobile */
+@media (max-width: 480px) and (min-width: 280px) {
+  /* Nav bar desplegable mobile */
+  .primary-header {
+    background-color: #0e131f;
+  }
+  .primary-header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .primary-header nav img {
+    padding: 20px 0 0 20px;
+    width: auto;
+    height: auto;
+  }
+  .primary-header nav ul {
+    color: white;
+  }
+  .primary-header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 4rem;
+  }
+  .primary-header nav ul li a {
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+  }
+  .primary-header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  /* Secciones del centro del blog */
+  /* aside */
+  .mainBlog {
+    background-color: #0e131f;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.2fr 1fr;
+        grid-template-columns: 0.2fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'aside imagenes';
+    background-color: #0e131f;
+    margin: 1em;
+  }
+  .uno {
+    display: none;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: aside;
+  }
+  /* imagenes */
+  .dos {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: imagenes;
+  }
+  .dos .imgContainer {
+    display: -ms-grid;
+    display: grid;
+  }
+  .dos .imgContainer .imgCol {
+    margin-right: 3em;
+    width: 150%;
+    height: 150%;
+  }
+  .dos .imgContainer .imgCol div {
+    margin-left: 1em;
+  }
+  .dos .imgContainer .imgCol div img {
+    width: 200%;
+  }
+  .dos .imgContainer .imgCol2 {
+    width: 90%;
+  }
+  .dos .imgContainer .imgCol2 div {
+    margin-left: 1em;
+  }
+  .dos .imgContainer .imgCol2 div img {
+    width: 90%;
+  }
+  /* Seccion pinturas */
+  /* titulo pinturas */
+  .vallejo-title {
+    display: inline;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    color: white;
+    padding: 50px;
+    font-size: 1rem;
+  }
+  .vallejo-title h3 {
+    width: 60%;
+    margin-left: 0.5em;
+  }
+  .vallejo-title p {
+    width: 60%;
+    font-size: 80%;
+    margin-left: 1em;
+  }
+  /* galeria pinturas */
+  .galeria {
+    width: 100%;
+    /* Precios */
+    /* Texto debajo de las imagenes */
+    /* Div de los botones para posicionarlos */
+  }
+  .galeria img {
+    margin-left: 1em;
+    width: 80%;
+  }
+  .galeria .precio {
+    margin-top: -1em;
+  }
+  .galeria p {
+    margin-right: 1.7em;
+    color: white;
+    width: 80%;
+    text-align: start;
+    font-size: 0.7rem;
+  }
+  .galeria .btnDiv {
+    margin-top: -0.7em;
+    padding-bottom: 1em;
+    margin-left: 1em;
+  }
+  .galeria .btnDiv .btn {
+    min-height: 1em;
+    font-size: 60%;
+  }
+  /* Contactos */
+  .header-formulario {
+    color: white;
+  }
+  .header-formulario h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-formulario {
+    color: white;
+    border: 1px solid grey;
+    width: 70%;
+    margin: 1em 0 1em 4em;
+  }
+  .section-formulario .mb-3 {
+    padding: 1em;
+  }
+  /* /* Productos 
+
+    .header-products {
+        display: flex;
+        justify-content: center;
+        color: whitesmoke;
+
+        padding: 1em;
+    }
+
+    .galeria-products {
+        display: flex;
+        flex-wrap: wrap;
+        color: whitesmoke;
+
+        p {
+            margin-left: 0em;
+            font-size: 0.8em;
+
+        }
+
+        .btnDiv {
+            padding: 0.5em;
+            margin-left: 0.5em;
+            width: 60%;
+
+            .btn {
+                min-height: 4em;
+
+            }
+
+        }
+    }
+ 
+ */
+}
+
+/* media query para tablet */
+@media (max-width: 1023px) and (min-width: 768px) {
+  /* seccion blog */
+  .uno {
+    margin-right: 5em;
+  }
+  .dos {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: imagenes;
+  }
+  .dos .imgContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 0.5rem;
+  }
+  .dos .imgContainer .imgCol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .dos .imgContainer .imgCol div {
+    padding: 5px;
+  }
+  .dos .imgContainer .imgCol div img {
+    width: 80%;
+  }
+  .dos .imgContainer .imgCol2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .dos .imgContainer .imgCol2 div {
+    padding: 5px;
+  }
+  .dos .imgContainer .imgCol2 div img {
+    width: 80%;
+  }
+  /* Seccion de imagenes pintura */
+  .galeria {
+    width: 100%;
+    /* Precios */
+    /* Texto debajo de las imagenes */
+    /* Div de los botones para posicionarlos */
+  }
+  .galeria img {
+    width: 80%;
+  }
+  .galeria .precio {
+    margin-top: -1em;
+  }
+  .galeria p {
+    margin-left: 1.5em;
+    color: white;
+    width: 60%;
+    text-align: center;
+  }
+  .galeria .btnDiv {
+    margin-top: -0.7em;
+    padding-bottom: 1em;
+    margin-left: 2em;
+  }
+  .galeria .btnDiv .btn {
+    min-height: 1em;
+  }
+  /* Contactos */
+  .header-formulario {
+    color: white;
+  }
+  .header-formulario h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-formulario {
+    color: white;
+    border: 1px solid grey;
+    width: 70%;
+    margin: 1em 0 1em 8em;
+  }
+  .section-formulario .mb-3 {
+    padding: 1em;
+  }
+  /* Productos 
+
+    .header-products {
+        display: flex;
+        justify-content: center;
+        color: whitesmoke;
+
+        padding: 1em;
+    }
+
+    .galeria-products {
+        color: whitesmoke;
+
+        p {
+
+            font-size: 1.2em;
+        }
+
+        .btnDiv {
+            padding: 0.5em;
+            margin-left: 0.5em;
+
+            .btn {
+                min-height: 4em;
+
+            }
+
+        }
+    }
+*/
+}
+
+@media (max-width: 2560px) and (min-width: 1024px) {
+  /* titulo pinturas */
+  .vallejo-title {
+    display: inline;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    color: white;
+    padding-bottom: 5em;
+    font-size: 1.5rem;
+  }
+  .vallejo-title h3 {
+    width: 60%;
+    margin-left: 0.7em;
+  }
+  .vallejo-title p {
+    width: 60%;
+    font-size: 80%;
+    margin-left: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+  }
+  /* Seccion de imagenes pintura */
+  .galeria {
+    font-size: 1.2rem;
+    width: 100%;
+    /* Precios */
+    /* Texto debajo de las imagenes */
+    /* Div de los botones para posicionarlos */
+  }
+  .galeria img {
+    width: 100%;
+  }
+  .galeria .precio {
+    margin-top: -1em;
+  }
+  .galeria p {
+    color: white;
+    text-align: center;
+  }
+  .galeria .btnDiv {
+    margin-top: -0.7em;
+    text-align: center;
+    margin-right: 1em;
+  }
+  .galeria .btnDiv .btn {
+    min-height: 3em;
+  }
+  /* contacto */
+  .header-formulario {
+    color: white;
+  }
+  .header-formulario h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-formulario {
+    color: white;
+    border: 1px solid grey;
+    width: 70%;
+    margin: 1em 0 1em 15em;
+  }
+  .section-formulario .mb-3 {
+    padding: 1em;
+  }
+  /* Productos 
+
+    
+    */
+}
+
+/* font-size: rem
+width: % in combination with a max-width, ch
+height: question urself "do i rly need to set height" if yes -> use a min-height
+padding/margin: rem or em
+media queries: em
+
+px only for little things like shadows, borders etc.
+ */
+/*# sourceMappingURL=style.css.map */

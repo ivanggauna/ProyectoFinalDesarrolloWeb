@@ -1,0 +1,32 @@
+.main-footer {
+    background-image: url('../imagenes/backgroundFooter.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    color: whitesmoke;
+    padding: 1em 0 1em 2em;
+    font-family: 'Teko', sans-serif;
+    
+    font-weight: 400;
+
+    h2{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+
+.section-contact {
+    color: white;
+    font-size: 2rem;
+    h3 {
+        padding: 10px 10px 10px;
+        
+    }
+
+    div {
+        padding: 10px 10px 10px;
+    }
+}

@@ -1,0 +1,99 @@
+hr {
+    width: 75%;
+}
+
+
+.mainBlog {
+    background-color: #0e131f;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'aside imagenes';
+    background-color: #0e131f;
+    margin: 1em;
+
+
+
+    /* Menu aside */
+    .uno {
+        margin-left: 8em;
+        height: auto;
+        width: auto;
+        grid-area: aside;
+
+        .breadcrumb {
+            text-decoration: none;
+        }
+
+
+        a {
+            color: white;
+
+            &:hover {
+
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+    /* Imagenes */
+    .dos {
+
+        grid-area: imagenes;
+
+        .imgContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 1.3rem;
+
+
+            .imgCol {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+
+                div {
+                    padding: 5px;
+
+                    img {
+                        width: 80%;
+                    }
+
+
+
+
+                }
+            }
+
+            .imgCol2 {
+                display: flex;
+                flex-direction: row;
+
+                div {
+                    padding: 5px;
+
+                    img {
+                        width: 80%;
+                    }
+                }
+
+
+
+
+
+            }
+
+
+
+
+
+        }
+
+    }
+
+
+
+}

@@ -1,0 +1,547 @@
+/* Query mobile */
+@include mobile {
+/* Nav bar desplegable mobile */
+
+
+    .primary-header {
+        background-color: #0e131f;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+
+            img {
+                padding: 20px 0 0 20px;
+                width: auto;
+                height: auto;
+
+            }
+
+            ul {
+                color: white;
+
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin-top: 4rem;
+
+
+                    a {
+                        display: inline-block;
+                        font-size: 0.8em;
+                        padding: 0.5em;
+                        text-decoration: none;
+                        color: white;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+    }
+
+    /* Secciones del centro del blog */
+
+    /* aside */
+
+
+    .mainBlog {
+        background-color: #0e131f;
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'aside imagenes';
+        background-color: #0e131f;
+        margin: 1em;
+
+    }
+
+
+    .uno {
+
+       
+        display: none;       
+        grid-area: aside;
+
+       
+    }
+
+    /* imagenes */
+    .dos {
+
+
+        grid-area: imagenes;
+
+
+
+        .imgContainer {
+            display: grid;
+          
+
+
+            .imgCol {
+                margin-right: 3em;
+                width:150%;
+                height: 150%;
+
+                div {
+                    margin-left: 1em;
+
+                    img {
+                        width: 200%;
+                       
+
+                    }
+                }
+            }
+
+            .imgCol2 {
+                width: 90%;
+
+                div {
+                    margin-left: 1em;
+
+                    img {
+                        width: 90%;
+
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+
+    /* Seccion pinturas */
+
+    /* titulo pinturas */
+
+    .vallejo-title {
+        display: inline;
+        justify-content: flex-start;
+        color: white;
+        padding: 50px;
+
+        font-size: 1rem;
+
+        h3 {
+            width: 60%;
+            margin-left: 0.5em;
+        }
+
+        p {
+            width: 60%;
+            font-size: 80%;
+            margin-left: 1em;
+        }
+
+    }
+
+    /* galeria pinturas */
+
+    .galeria {
+
+        width: 100%;
+
+        img {
+            margin-left: 1em;
+            width: 80%;
+        }
+
+        /* Precios */
+        .precio {
+            margin-top: -1em;
+        }
+
+        /* Texto debajo de las imagenes */
+        p {
+            margin-right: 1.7em;
+            color: white;
+            width: 80%;
+            text-align: start;
+            font-size: 0.7rem;
+        }
+
+        /* Div de los botones para posicionarlos */
+        .btnDiv {
+            margin-top: -0.7em;
+            padding-bottom: 1em;
+            margin-left: 1em;
+
+
+
+
+            .btn {
+
+                min-height: 1em;
+                font-size: 60%;
+
+            }
+        }
+    }
+
+
+
+
+    /* Contactos */
+
+
+    .header-formulario {
+        color: white;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+    .section-formulario {
+
+
+        color: white;
+        border: 1px solid grey;
+        width: 70%;
+        margin: 1em 0 1em 4em;
+
+        .mb-3 {
+            padding: 1em;
+        }
+
+
+    }
+
+
+    /* /* Productos 
+
+    .header-products {
+        display: flex;
+        justify-content: center;
+        color: whitesmoke;
+
+        padding: 1em;
+    }
+
+    .galeria-products {
+        display: flex;
+        flex-wrap: wrap;
+        color: whitesmoke;
+
+        p {
+            margin-left: 0em;
+            font-size: 0.8em;
+
+        }
+
+        .btnDiv {
+            padding: 0.5em;
+            margin-left: 0.5em;
+            width: 60%;
+
+            .btn {
+                min-height: 4em;
+
+            }
+
+        }
+    }
+ 
+ */
+
+}
+
+/* media query para tablet */
+
+
+@include tablets {
+
+
+    /* seccion blog */
+
+
+
+    .uno {
+        margin-right: 5em;
+    }
+
+
+
+    .dos {
+        grid-area: imagenes;
+
+        .imgContainer {
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 0.5rem;
+
+
+            .imgCol {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+
+                div {
+                    padding: 5px;
+
+                    img {
+                        width: 80%;
+                    }
+
+
+
+
+                }
+            }
+
+            .imgCol2 {
+                display: flex;
+                flex-direction: row;
+
+                div {
+                    padding: 5px;
+
+                    img {
+                        width: 80%;
+                    }
+                }
+
+
+
+
+
+            }
+
+
+
+
+
+        }
+
+    }
+
+
+
+    /* Seccion de imagenes pintura */
+
+    .galeria {
+
+        width: 100%;
+
+        img {
+            width: 80%;
+        }
+
+        /* Precios */
+        .precio {
+            margin-top: -1em;
+        }
+
+        /* Texto debajo de las imagenes */
+        p {
+            margin-left: 1.5em;
+            color: white;
+            width: 60%;
+            text-align: center;
+        }
+
+        /* Div de los botones para posicionarlos */
+        .btnDiv {
+            margin-top: -0.7em;
+            padding-bottom: 1em;
+            margin-left: 2em;
+
+
+            .btn {
+                min-height: 1em;
+
+
+            }
+        }
+    }
+
+
+
+
+    /* Contactos */
+
+
+    .header-formulario {
+        color: white;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+    .section-formulario {
+
+
+        color: white;
+        border: 1px solid grey;
+        width: 70%;
+        margin: 1em 0 1em 8em;
+
+        .mb-3 {
+            padding: 1em;
+        }
+
+
+    }
+
+
+    /* Productos 
+
+    .header-products {
+        display: flex;
+        justify-content: center;
+        color: whitesmoke;
+
+        padding: 1em;
+    }
+
+    .galeria-products {
+        color: whitesmoke;
+
+        p {
+
+            font-size: 1.2em;
+        }
+
+        .btnDiv {
+            padding: 0.5em;
+            margin-left: 0.5em;
+
+            .btn {
+                min-height: 4em;
+
+            }
+
+        }
+    }
+*/
+
+
+
+
+
+}
+
+@include desktop {
+    /* titulo pinturas */
+
+    .vallejo-title {
+        display: inline;
+        justify-content: flex-start;
+        color: white;
+        padding-bottom: 5em;
+
+
+        font-size: 1.5rem;
+
+        h3 {
+            width: 60%;
+            margin-left: 0.7em;
+        }
+
+        p {
+            width: 60%;
+            font-size: 80%;
+            margin-left: 1em;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+        }
+
+    }
+
+
+
+
+    /* Seccion de imagenes pintura */
+
+    .galeria {
+        font-size: 1.2rem;
+
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        /* Precios */
+        .precio {
+            margin-top: -1em;
+        }
+
+        /* Texto debajo de las imagenes */
+        p {
+            color: white;
+
+            text-align: center;
+        }
+
+        /* Div de los botones para posicionarlos */
+        .btnDiv {
+            margin-top: -0.7em;
+            text-align: center;
+            margin-right: 1em;
+
+            .btn {
+
+                min-height: 3em;
+
+            }
+        }
+    }
+
+
+
+    /* contacto */
+
+    .header-formulario {
+        color: white;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+    .section-formulario {
+
+
+        color: white;
+        border: 1px solid grey;
+        width: 70%;
+        margin: 1em 0 1em 15em;
+
+        .mb-3 {
+            padding: 1em;
+        }
+
+
+    }
+
+
+    /* Productos 
+
+    
+    */
+
+
+}
