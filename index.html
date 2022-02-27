@@ -15,18 +15,36 @@
 
 <body>
     <!-- Menu nav -->
-    <header class="primary-header">
-        <nav>
-            <img class="img-fluid" src="./imagenes/logoNew.webp" alt="">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./secciones/productos.html">Productos</a></li>
-                <li><a href="./secciones/blog.html">Blog</a></li>
-                <li><a href="./secciones/pinturas.html">Pinturas</a></li>
-                <li><a href="./secciones/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark container-fluid">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="../imagenes/logoNew.webp" class="img-fluid" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./secciones/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./secciones/pinturas.html">Pinturas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./secciones/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Main -->
 
@@ -36,10 +54,10 @@
                 <h2>NUEVOS INGRESOS</h2>
             </div>
         </header>
-        <div class="guion"><img src="./imagenes/guion-blanco.webp" alt="guion"></div>
+        <div class="guion img-fluid"><img src="./imagenes/guion-blanco.webp" alt="guion"></div>
         <!-- seccion imagen+precio -->
         <section class="main-section">
-            <div class="main-image"><img src="./imagenes/mgProvidence.webp" alt=""></div>
+            <div class="main-image img-fluid"><img src="./imagenes/mgProvidence.webp" alt=""></div>
             <div>
                 <h3>Providence Gundam (MG) 1/100</h3>
                 <h4>$12.000</h4>
@@ -60,17 +78,17 @@
         <section class="secondary-section">
             <Ul>
                 <h3>PAQUETES</h3>
-                <li> <img src="./imagenes/guion-blanco.webp" alt=""></li>
+                <li> <img class="img-fluid" src="./imagenes/guion-blanco.webp" alt=""></li>
                 <li>Ahorra con los Paquetes</li>
             </Ul>
             <ul>
-                <h3>ARMAS PERSONALIZADAS</h3>
-                <li> <img src="./imagenes/guion-blanco.webp" alt=""></li>
+                <h3>ARMAS</h3>
+                <li> <img class="img-fluid" src="./imagenes/guion-blanco.webp" alt=""></li>
                 <li>Armas impresas en 3D</li>
             </ul>
             <ul>
-                <h3>CALCOMANIAS AL AGUA</h3>
-                <li> <img src="./imagenes/guion-blanco.webp" alt=""></li>
+                <h3>CALCOMANIAS</h3>
+                <li> <img class="img-fluid" src="./imagenes/guion-blanco.webp" alt=""></li>
                 <li>Calcomanias al agua de alta calidad</li>
             </ul>
 
@@ -92,7 +110,7 @@
         </header>
 
         <!-- Logo de whatsapp -->
-        <section class="section-contact">           
+        <section class="section-contact">
             <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                     class="bi bi-whatsapp" viewBox="0 0 16 16">
                     <path

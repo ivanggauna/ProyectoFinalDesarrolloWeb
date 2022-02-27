@@ -15,25 +15,36 @@
 
 <body>
   <!-- Menu nav -->
-  <header class="primary-header">
-
-
-    <nav>
-      <img src="../imagenes/logoNew.webp" class="img-fluid" alt="">
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="pinturas.html">Pinturas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-
-
-
-  </header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark container-fluid">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><img src="../imagenes/logoNew.webp" class="img-fluid" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="pinturas.html">Pinturas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <!-- Main -->
-  
+
   <div class="buscador">
     <input type="text" name="search" placeholder="Buscar" class="src"><button type="button"
       class="btn btn-danger">Buscar</button>
@@ -42,158 +53,234 @@
   <div class="vallejo-title">
     <h3>Pinturas Vallejo</h3>
   </div>
-  <div class="vallejo-title">
+  <div class="vallejo-parrafo">
     <p>Es la pintura de referencia para maquetas y modelos a escala (aviones, barcos, trenes, tanques, etc.). Es de
       aplicación a pincel y si se reduce se puede aplicar con aerógrafo. Colores diseñados por profesionales según
       equiparación a cartas universales como Federal Standard, Carta RAL y carta RLM.</p>
   </div>
 
 
-  <article class="galeria">
+  <div class="container">
 
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="col"><img src="../imagenes/vallejoOxido.webp" alt="" class="img-fluid"></div>
+
+    <div class="row gProductos">
+      <div class="col-xl-4 col-lg-4 text-center">
+        <img src="../imagenes/vallejoBlack.webp" class="img-fluid" alt="">
+        <p>VALLEJO WASH NEGRO</p>
+        <p>$1500.00</p>
+        <button type="button" class="btn btn-danger d-block mx-auto">Añadir al carrito</button>
+        <div class="accordion accordion-flush" id="accordionFlushProductos">
+          <div class="accordion-item mt-2">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Descripcion del producto.
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushProductos">
+              <div class="accordion-body"> <strong>Model Wash, lavados formulados de base agua y acabado mate.</strong>
+                <ul>
+                  <li><strong>Seguridad:</strong>
+                    Model Wash no es inflamable y no contiene disolventes.</li>
+                  <li>
+                    <strong>Presentación:</strong>
+                    Disponible en botellas de 35 ml./1.18 fl.oz. con tapón bisagra y cuentagotas.
+                  </li>
+                  <li>
+                    <strong>Recomendaciones de uso:</strong> Model Wash Negro 76.518 se recomienda para colores muy
+                    oscuros y pequeños detalles en las juntas y remaches de la maqueta.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <div class="col"><img src="../imagenes/vallejoMud.webp" alt="" class="img-fluid"></div>
-        </div>
-        <div class="col">
-          <div class="col"><img src="../imagenes/vallejoPigmento.webp" alt="" class="img-fluid"></div>
-        </div>
+
       </div>
-    </div>
+      <div class="col-xl-4 col-lg-4 text-center">
+        <img src="../imagenes/vallejoBlanco.webp" class="img-fluid" alt="">
+        <p>VALLEJO WASH BLANCO</p>
+        <p>$1500.00</p>
+        <button type="button" class="btn btn-danger d-block mx-auto">Añadir al carrito</button>
+        <div class="accordion accordion-flush" id="accordionFlushProductos">
+          <div class="accordion-item mt-2">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Descripcion
+                del producto.
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushProductos">
+              <div class="accordion-body"> <strong>Model Wash, lavados formulados de base agua y acabado mate.</strong>
+                <ul>
+                  <li><strong>Seguridad:</strong>
+                    Model Wash no es inflamable y no contiene disolventes.</li>
+                  <li>
+                    <strong>Presentación:</strong>
+                    Disponible en botellas de 35 ml./1.18 fl.oz. con tapón bisagra y cuentagotas.
+                  </li>
+                  <li>
+                    <strong>Recomendaciones de uso:</strong> Model Wash Blanco 76.501 se recomienda para los escenarios
+                    de invierno y vehículos pintados en blanco.
+                  </li>
+                </ul>
 
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="col">
-            <p>Vallejo wash efectos óxido</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="col">
-            <p>Vallejo wash efectos mud/barro</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="col">
-            <p>Vallejo pigmento negro natural</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="col precio">
-            <p>$1000.00</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="col precio">
-            <p>$1000.00</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="col precio">
-            <p>$1000.00</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col btnDiv">
-          <button type="button " class="btn btn-danger btn-sm">Añadir al carrito</button>
-        </div>
-        <div class="col btnDiv">
-          <button type="button " class="btn btn-danger btn-sm">Añadir al carrito</button>
-        </div>
-        <div class="col btnDiv">
-          <button type="button" class="btn btn-danger btn-sm">Añadir al carrito</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="col"><img src="../imagenes/vallejoBlack.webp" alt="" class="img-fluid"></div>
-        </div>
-        <div class="col">
-          <div class="col"><img src="../imagenes/vallejoMetal.webp" alt="" class="img-fluid"></div>
-        </div>
-        <div class="col">
-          <div class="col"><img src="../imagenes/vallejoBlanco.webp" alt="" class="img-fluid"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="col">
-            <p>Vallejo wash negro</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="col">
-            <p>Vallejo acrilico metal</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="col">
-            <p>Vallejo wash blanco</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="col precio">
-            <p>$1000.00</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="col precio">
-            <p>$1000.00</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="col precio">
-            <p>$1000.00</p>
+      <div class="col-xl-4 col-lg-4 text-center ">
+        <img src="../imagenes/vallejoMetal.webp" class="img-fluid " alt="">
+        <p>VALLEJO ACRILICO COLOR METAL</p>
+        <p>$1500.00</p>
+        <button type="button" class="btn btn-danger d-block mx-auto">Añadir al carrito</button>
+        <div class="accordion accordion-flush" id="accordionFlushProductos">
+          <div class="accordion-item mt-2">
+            <h2 class="accordion-header" id="flush-headingOThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOThree" aria-expanded="false" aria-controls="flush-collapseOThree">
+                Descripcion del producto.
+              </button>
+            </h2>
+            <div id="flush-collapseOThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushProductos">
+              <div class="accordion-body"> <strong>Metal Color es la innovadora gama de colores metalizados de
+                  formulación base agua, que emplea pigmentos de aluminio en su elaboración.</strong>
+                <ul>
+                  <li><strong>Seguridad:</strong>
+                    Metal Color no es inflamable y no contiene disolventes.</li>
+                  <li>
+                    <strong>Presentación:</strong>
+                    Disponible en botellas de 32 ml/1.08 fl oz con tapón bisagra y cuentagotas. Incluye bola de acero
+                    inoxidable para mejorar la agitación.
+                  </li>
+                  <li>
+                    <strong>Recomendaciones de uso:</strong> Es aconsejable, en el caso de fuselajes y componentes de
+                    modelos de avión.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="row mb-3 gProductos text-center">
+      <div class="col-xl-4 col-lg-4">
+        <img src="../imagenes/vallejoMud.webp" class="img-fluid" alt="">
+        <p>VALLEJO SPLASH MUD</p>
+        <p>$1500.00</p>
+        <button type="button" class="btn btn-danger d-block mx-auto">Añadir al carrito</button>
+        <div class="accordion accordion-flush" id="accordionFlushProductos">
+          <div class="accordion-item mt-2">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Descripcion del producto.
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushProductos">
+              <div class="accordion-body"> <strong>Weathering Effects es una gama de productos formulados de base agua
+                  con la cual el modelista podrá reproducir sobre maquetas y dioramas los efectos de la exposición a los
+                  elementos y la naturaleza.</strong>
+                <ul>
+                  <li><strong>Seguridad:</strong>
+
+                    Weathering Effects no es inflamable y no contiene disolventes.</li>
+                  <li>
+                    <strong>Presentación:</strong>
+                    Weathering Effects está disponible en frascos de 40 ml./1.35 fl.oz.
+                  </li>
+                  <li>
+                    <strong>Recomendaciones de uso:</strong> Salpicaduras Barro Ruso es un matiz bien conocido,
+                    especialmente oscuro observado en terrenos fértiles y llamado “Tierra Negra” en los países del este
+                    de Europa, Ucrania y sur de Rusia.
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 text-center">
+        <img src="../imagenes/vallejoOxido.webp" class="img-fluid" alt="">
+        <p>VALLEJO WASH OXIDO CLARO</p>
+        <p>$1500.00</p>
+        <button type="button" class="btn btn-danger d-block mx-auto">Añadir al carrito</button>
+        <div class="accordion accordion-flush" id="accordionFlushProductos">
+          <div class="accordion-item mt-2">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Descripcion del producto.
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushProductos">
+              <div class="accordion-body">
+                <strong>Model Wash, lavados formulados de base agua y acabado mate.</strong>
+                <ul>
+                  <li><strong>Seguridad:</strong>
+                    Model Wash no es inflamable y no contiene disolventes. </li>
+                  <li>
+                    <strong>Presentación:</strong>
+                    Disponible en botellas de 35 ml./1.18 fl.oz. con tapón bisagra y cuentagotas.
+                  </li>
+                  <li>
+                    <strong>Recomendaciones de uso:</strong> Model Wash Óxido Claro 76.505 se recomienda para efectos de
+                    oxidación y para escenarios de invierno, deterioro en vehículos y todo tipo de partes metálicas.
 
 
-    <div class="container">
-      <div class="row">
-        <div class="col btnDiv">
-          <button type="button" class="btn btn-danger btn-sm">Añadir al carrito</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col btnDiv">
-          <button type="button" class="btn btn-danger btn-sm">Añadir al carrito</button>
-        </div>
-        <div class="col btnDiv">
-          <button type="button" class="btn btn-danger btn-sm">Añadir al carrito</button>
+      </div>
+      <div class="col-xl-4 col-lg-4 text-center">
+        <img src="../imagenes/vallejoVerde.webp" class="img-fluid" alt="">
+        <p>VALLEJO WASH VERDE OLIVA</p>
+        <p>$1500.00</p>
+        <button type="button" class="btn btn-danger d-block mx-auto">Añadir al carrito</button>
+        <div class="accordion accordion-flush" id="accordionFlushProductos">
+          <div class="accordion-item mt-2">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Descripcion del producto.
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushProductos">
+              <div class="accordion-body"> <strong>Model Wash, lavados formulados de base agua y acabado mate.</strong>
+                <ul>
+                  <li><strong>Seguridad:</strong>
+                    Model Wash no es inflamable y no contiene disolventes.</li>
+                  <li>
+                    <strong>Presentación:</strong>
+                    Disponible en botellas de 35 ml./1.18 fl.oz. con tapón bisagra y cuentagotas.
+                  </li>
+                  <li>
+                    <strong>Recomendaciones de uso:</strong> Model Wash Verde Oscuro 76.512 se recomienda para maquetas
+                    pintadas en verde. También es apto para camuflajes y escenarios naturales con vegetación, ríos y
+                    lagos.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-
-
-
-  </article>
-
+  </div>
 
 
 
@@ -208,7 +295,7 @@
 
     <!-- Logo de whatsapp -->
     <section class="section-contact">
-      <h3>Contacto</h3>
+
       <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp"
           viewBox="0 0 16 16">
           <path

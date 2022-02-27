@@ -18,55 +18,27 @@
 .vallejo-title {
     display: flex;
     justify-content: center;
-    color: white;   
+    color: white;
 
     h3 {
         text-align: center;
         font-size: 2.5rem;
     }
 
+
+}
+
+.vallejo-parrafo {
+    display: flex;
+    justify-content: center;
+    color: white;
+
+
     p {
         font-family: var(--fuente-secundaria);
-      
+        color: white;
+        width: 65%;
     }
-
 }
 
 /* Seccion de imagenes */
-
-.galeria {
-
-    width: 100%;
-
-    img {
-        width: 100%;
-    }
-
-    /* Precios */
-    .precio {
-        font-family: var(--fuente-secundaria);
-        margin-top: -1em;
-    }
-
-    /* Texto debajo de las imagenes */
-    p {
-        font-family: var(--fuente-secundaria);
-        margin-left: 1.5em;
-        color: white;
-        width: 80%;
-        text-align: center;
-    }
-
-    /* Div de los botones para posicionarlos */
-    .btnDiv {
-        margin-top: -0.7em;
-        padding-bottom: 1em;
-
-        .btn {
-            min-height: 1em;
-            font-size: 1.5rem;
-            font-weight: 300;
-            letter-spacing: 0.3px;
-        }
-    }
-}
