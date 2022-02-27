@@ -104,9 +104,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-top: 1em;
   color: white;
 }
@@ -453,6 +453,23 @@ hr {
 
 /* Query mobile */
 @media (max-width: 480px) and (min-width: 280px) {
+  /* index */
+  .third-header {
+    font-family: var(--fuente-primaria);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 1em;
+    margin-left: 0.8em;
+    color: white;
+  }
   /* Secciones del centro del blog */
   /* aside */
   .mainBlog {
@@ -556,6 +573,22 @@ hr {
   }
   .main-section div h4 {
     font-size: 2rem;
+  }
+  .third-header {
+    font-family: var(--fuente-primaria);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 1em;
+    margin-left: 5em;
+    color: white;
   }
   /* seccion blog */
   .uno {
@@ -680,6 +713,22 @@ hr {
   .main-section div h4 {
     font-size: 2.5rem;
   }
+  .third-header {
+    font-family: var(--fuente-primaria);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 1em;
+    margin-left: 10.7em;
+    color: white;
+  }
   /* Blog */
   .uno {
     margin-right: 3em;
@@ -803,6 +852,22 @@ hr {
 
 /* Mq para los tamaños mayores a 1200px */
 @media (min-width: 1200px) {
+  .third-header {
+    font-family: var(--fuente-primaria);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1em;
+    margin-right: 22.3em;
+    color: white;
+  }
   /* Productos */
   .header-products {
     display: -webkit-box;
